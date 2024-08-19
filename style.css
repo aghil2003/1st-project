@@ -8,7 +8,6 @@
     text-decoration: none;   
 }
 body{
-    /* overflow-x: hidden; */
     margin: 0;
 }
 ul{
@@ -35,21 +34,51 @@ header{
     justify-content: space-between;
     align-items: baseline;
     padding: 20px;
-    padding-left: 40px;
-   
-
+    padding-left: 40px; 
+    position: relative; 
+}
+.open-menu{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: none;
+}    
+.open-menu i{
+    font-size: 30px;
+    margin-top: 20px;
+    right: 10px;
+    top: 0px;
+    
+}
+.close-menu{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: none;
+}    
+.close-menu i{
+    font-size: 30px;
+    margin-top: 20px;
+    right: 10px;
+    top: 0px;
+    
+}
+#check{
+    display: none;
 }
 .navitems{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    padding: 0 50px 0 0;
 }
 .brandlogo a{
     font-size: 24px;
     font-weight: 700;
     text-align: left;
     color: #252B42;
+    z-index: 9;
 
 }
 .navitems li a{
@@ -57,39 +86,24 @@ header{
       font-weight: 700;
       text-align: center;
       color: #737373;
-      ;
 
 }
-.btnNav{
-  
-    display: flex;
-    justify-content: start;
-    gap: 50px;
-    margin-bottom: 30px;
-   
-}
-.btnNav .loginbtn{
+.loginbtn{
       width:41px;
       font-size: 14px;
       font-weight: 700;
-      line-height: 22px;
-      text-align: right;
       background-color: transparent;
       color: #96BB7C;
       border: none;
       margin-left: 50px;
-
 }
-.btnNav .joinbtn{
+.joinbtn{
     
       padding: 15px 25px 15px 25px;
       gap: 15px;
       border-radius: 5px 5px 5px 5px;
       font-size: 14px;
       font-weight: 700;
-      line-height: 22px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       background-color: #96BB7C;
       color: #FFFFFF;
       border: none;
@@ -97,8 +111,11 @@ header{
       gap: 10px;
 
 }
-.btnNav .joinbtn:hover{
+ .joinbtn:hover{
     background-color: #65e708;
+}
+#check:checked~ .navitems{
+    left: 0;
 }
 /* header-end */
 
@@ -159,14 +176,14 @@ header{
     
 }
 .btn{
-    gap: 10px;
+    display: flex;
+    gap: 5px;
     margin-top: 30px;
     
 }
 .btn .quote{
     width:193px;
-    height:52px;
-    padding: 15px 40px 15px 40px;
+    height: 40px;
     gap: 10px;
     border-radius: 5px 5px 5px 5px;
     font-size: 14px;
@@ -182,16 +199,12 @@ header{
 }
 .btn .learn{
     width:162px;
-    height:52px;
-    padding: 15px 40px 15px 40px;
+    height: 40px;
     gap: 10px;
     border-radius: 5px 5px 5px 5px;
     border: 1px 0px 0px 0px;
     font-size: 14px;
     font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
     border: none;
     background-color: transparent;
     color: #96BB7C;
@@ -227,8 +240,6 @@ header{
 .status .status1-1{
       font-size: 58px;
       font-weight: 700;
-      line-height: 80px;
-      letter-spacing: 0.20000000298023224px;
       text-align: center;
       color: #96BB7C;
       margin-right: 7px;
@@ -237,8 +248,6 @@ header{
 .status .status1-2{
       font-size: 16px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.10000000149011612px;
       text-align: center;
       color: #252B42;
 
@@ -361,10 +370,9 @@ header{
     display: flex;
 }
 .serives-left{
-    align-items: center;
-    width: 50%;
-    margin-top: 120px;
-    
+    max-width: 50%;
+    margin-top: 100px;
+       
 }   
 .serives-left .under-line{
    width: 100px;
@@ -374,9 +382,6 @@ header{
 .serives-left .serives1{
       font-size: 40px;
       font-weight: 700;
-      line-height: 50px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #252B42;
       margin-top: 50px;
 
@@ -384,9 +389,6 @@ header{
 .serives-left .serives2{
       font-size: 14px;
       font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #737373;
       margin-top: 50px;
 
@@ -394,9 +396,6 @@ header{
 .serives-left .serives3{
       font-size: 14px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color:#96BB7C;
       margin: 50px 0;
       display: flex;
@@ -407,6 +406,7 @@ header{
 .serives-right{
     width: 50%;
     margin-top: 50px;
+
 }
 .serives-right img{
     width: 100%;
@@ -434,26 +434,18 @@ header{
 .upper-section .teach1{
       font-size: 14px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #96BB7C;
 
 }
 .upper-section .teach2{
      font-size: 40px;
      font-weight: 700;
-     line-height: 50px;
-     letter-spacing: 0.20000000298023224px;
-     text-align: left;
      color: #252B42;
      margin-top: 25px;
 }
 .upper-section .teach3{
       font-size: 14px;
       font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 0.20000000298023224px;
       color:#737373 ;
       margin-top: 25px;
 }
@@ -475,9 +467,6 @@ header{
 .teach-img1 .rateing .teach-a0{
       font-size: 14px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #96BB7C;
       margin-top: 10px;
 
@@ -502,9 +491,6 @@ header{
 .teach-img1 .teach-a1{
       font-size: 16px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.10000000149011612px;
-      text-align: left;
       color: #252B42;
       margin-top: 10px;
 
@@ -512,9 +498,6 @@ header{
 .teach-img1 .teach-a2{
       font-size: 14px;
       font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #737373;
       margin-top: 10px;
 
@@ -522,9 +505,6 @@ header{
 .teach-img1 .teach-a3{
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
     color: #737373;
     display: flex;
     gap: 10px;
@@ -649,8 +629,6 @@ header{
 .about-client .client-upper .client-a{
      font-size: 14px;
      font-weight: 700;
-     line-height: 24px;
-     letter-spacing: 0.20000000298023224px;
      text-align: left;
      color: #96BB7C;
      padding-top: 100px;
@@ -660,9 +638,6 @@ header{
 .about-client .client-upper .client-b{
       font-size: 40px;
       font-weight: 700;
-      line-height: 50px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #252B42;
       margin-top: 30px;
 
@@ -670,9 +645,6 @@ header{
 .about-client .client-upper .client-c{
       font-size: 14px;
       font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #737373;
       margin-top: 30px;
 
@@ -710,9 +682,6 @@ header{
     margin-top: 15px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
     color:#737373;
 }
 
@@ -730,9 +699,6 @@ header{
 .rewive-1 .rewivers .rewiver .rewiver1{
       font-size: 14px;
       font-weight: 700;
-      line-height: 24px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: left;
       color: #96BB7C;    
 }
 
@@ -742,13 +708,13 @@ header{
 
 .company{
     max-width: 100%;
-    height: 100px;
+    margin: auto;
     background-color: #FFFFFF;
 }
 
 .company .brand-logo{
     max-width: 1000px;
-    height: 100px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -785,41 +751,29 @@ header{
 .about-sub .sub1{
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
     color: #96BB7C;
 }
 .about-sub .sub2{
    font-size: 40px;
    font-weight: 700;
-   line-height: 50px;
-   letter-spacing: 0.20000000298023224px;
-   text-align: center;
    color: #252B42;
 }
 .about-sub .sub3{
    font-size: 14px;
    font-weight: 400;
-   line-height: 20px;
-   letter-spacing: 0.20000000298023224px;
-   text-align: center;
    color: #737373;
 }
 .about-sub .email{
-    width:690px;
-    height: 60px;
+    max-width:690px;
     margin-top: 50px;
     display: flex;
-    
+    align-items: center;
+
 }
 .about-sub .email .mail-id{
     width: 550px;
     font-size: 25px;
     font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
 
 }
 .about-sub .email .sub5{
@@ -827,9 +781,6 @@ header{
     background-color: #96BB7C;
     font-size: 25px;
     font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
     color: #FFFFFF;
     border-color:transparent;
 
@@ -864,18 +815,12 @@ footer{
 .upper-footer .footerhead{
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.10000000149011612px;
-    text-align: left;
     color:#252B42;
    
 }
 .upper-footer  .footer-cont .foot{
    font-size: 14px;
    font-weight: 700;
-   line-height: 24px;
-   letter-spacing: 0.20000000298023224px;
-   text-align: left;
    color: #737373;
    margin-top: 15px;
 
@@ -883,9 +828,6 @@ footer{
 .upper-footer  .footer-cont-1 .foot{
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
     color: #737373;
     margin-top: 15px;
 }
@@ -896,9 +838,6 @@ footer{
  .upper-footer  .footer-cont-1 .foot-1{
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
     color: #737373;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -943,3 +882,365 @@ width: 100%;
 }
 
 /* end-part end */
+
+@media (max-width:1000px) {
+    .navitems{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width:900px){
+    .nav{
+        gap:30px;
+    }
+    .banner-left .banner1{
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .banner-left .banner2{
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    .banner-left .banner3{
+      font-size: 15px;
+      font-weight: 200;
+      text-align: left;
+      margin-top: 20px;
+    }
+    .btn .quote{
+        width:100px;
+        height: 30px;
+    }
+    .btn .learn{
+        width:80px;
+        height: 30px;
+    }
+    .status .status1-1{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .status .status1-2{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .serives-left .serives1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .about-teacher .upper-section .teach2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .about-client .client-upper .client-b{
+        font-size: 20px;
+        font-weight: 350;
+    }
+    .about-sub .sub2{
+        font-size: 20px;
+        font-weight: 350;
+    } 
+    .upper-footer .footerhead{
+        font-size: 10px;
+        font-weight: 500;
+       
+    }
+    .upper-footer  .footer-cont .foot{
+       font-size: 7px;
+       font-weight: 350;
+    }
+    .upper-footer  .footer-cont-1 .foot{
+        font-size: 7px;
+        font-weight: 350;
+    }
+     .upper-footer  .footer-cont-1 .foot-1{
+        font-size: 7px;
+        font-weight: 350;
+    }
+    .about-sub .email .mail-id{
+        width: 350px;
+        font-size: 15px;
+        font-weight: 400;
+    
+    }
+    .about-sub .email .sub5{
+        width:100px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .endsection .footer-end{
+        font-size: 7px;
+        font-weight: 350;
+       
+    }
+    
+}
+@media (max-width:870px){
+     .navitems{
+        position:fixed;
+        top: 50px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgb(66, 66, 242);
+        z-index:2;
+        transition: all 0.2s ease-in-out;
+        color: #FFFFFF;
+
+    }
+    #check:checked ~ .navitems{
+         left: 100;
+    }
+    .open-menu{
+        display: block;
+    }
+    
+    .navitems li a{
+        color: #FFFFFF;
+  
+    }
+    .loginbtn{
+        margin-left:0;
+        color: #FFFFFF;
+    }
+    .open-menu{
+        display:block;
+    }
+    .close-menu{
+        display: block;
+    }
+    .banner .banner-right{
+        display: none;
+    } 
+    .banner .banner-left{
+        max-width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .status-bar{
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+    }
+    .about-page .upper-layout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-page .down-layout{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-serives{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serives-left{
+        width: 100%;
+        margin: auto;
+    }
+    .serives-right{
+        width: 100%;
+        margin: auto;
+    }
+    .serives-right .img{
+        width: 60%;
+    }
+    .about-teacher .upper-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-teacher .lower-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .about-client .client-upper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-client .client-lower {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company{
+        max-width: 100%;
+        margin: auto;
+    }
+    .company .brand-logo{
+        font-size: 50px;
+        display: flex;
+        gap: 10px;
+        
+    }  
+    .about-sub .email .mail-id{
+        width: 200px;
+        font-size: 10px;
+        font-weight: 400;
+    
+    }
+    .about-sub .email .sub5{
+        width:75px;
+        font-size: 10px;
+        font-weight: 400;
+    }  
+}
+@media (max-width:750) {
+    .banner-left .btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn .quote{
+        width:50px;
+        height: 30px;
+        font-size: 3px;
+        font-weight: 100;
+    }
+    .btn .learn{
+        width:40px;
+        height: 30px;
+        font-size: 3px;
+        font-weight: 100;
+    }
+    .status .status1-1{
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .status .status1-2{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .about-sub .email{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width:700px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-left{
+        margin-top: 50px;
+    }
+    .status-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upper-footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 30px;
+    }
+    .upper-footer .footerhead{
+        font-size: 16px;
+        font-weight: 700;
+       
+    }
+    .upper-footer  .footer-cont .foot{
+       font-size: 14px;
+       font-weight: 700;
+    
+    }
+    .upper-footer  .footer-cont-1 .foot{
+        font-size: 14px;
+        font-weight: 700;
+    }
+     .upper-footer  .footer-cont-1 .foot-1{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+@media (max-width:660px) {
+     .mail-id{
+        width: 100px;
+        font-size: 15px;
+        font-weight: 100;
+     }   
+}
+@media (max-width:500px) {
+    .company .brand-logo span i{
+        font-size: 20px;
+        gap: 5px;
+    }    
+}
+@media (max-width:380px){
+    .status .status1-1{
+        font-size: 25px;
+        font-weight: 400;
+        margin-right: 60px;
+    }
+    .status .status1-2{
+        font-size: 8px;
+        font-weight: 400;
+        margin-right: 60px;
+    }
+    .banner-left .banner2{
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    .down-layout .layout-1{
+        width:250px;
+        margin:auto;
+    }
+    .about-client .client-lower .rewive-1{
+        width:200px;
+    }
+    .rewivers{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .rewiver .rewiver1{
+        display: flex;
+        gap: 5px;
+    }
+}
+@media (max-width:280px) {
+    .down-layout .layout-1{
+        width:225px;
+    }   
+    .upper-footer .footerhead{
+        font-size: 12px;
+        font-weight: 700;
+        
+       
+    }
+    .upper-footer  .footer-cont .foot{
+       font-size: 12px;
+       font-weight: 350;
+    }
+    .upper-footer  .footer-cont-1 .foot{
+        font-size: 12px;
+        font-weight: 350;
+    }
+    .upper-footer  .footer-cont-1 .foot-1{
+        font-size: 12px;
+        font-weight: 350;
+    }
+}
