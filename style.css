@@ -554,11 +554,15 @@ header{
     padding-bottom: 10px;
     
 }
+.teach-a3 .download{
+    color: #737373;
+}
 .teach-img1 .rate {
     display: flex;
     gap: 10px;
     
 }
+
 .teach-img1 .imgBox{
     position: relative;
     display: flex;
