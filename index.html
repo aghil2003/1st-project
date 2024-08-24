@@ -7,28 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/col-md-6.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <nav class="nav">
-                <div class="brandlogo">
+            <div class="navbar"> 
+                 <div class="brandlogo">
                     <a href="#">Brandname</a>
-                </div>
-             
+                  </div>
+                  <input type="checkbox" id="check" >
                     <ul class="navitems">
-                       
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#Product">Product</a></li>
+                            <li><a href="#Pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <button class="loginbtn">Login </button>
+                            <button class="joinbtn">Join us <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                            <label class="close-menu" for="check"><i class="fa-solid fa-times"></i></label>
                     </ul>
-                   
-                    <div class="btnNav">
-                        <button class="loginbtn">Login </button>
-                        <button class="joinbtn">Join us <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                    </div>
-               
+                 
+                <label class="open-menu" for="check"><i class="fa-solid fa-bars"></i></label>
                 </nav>
          </div>
         </header>
@@ -38,13 +37,15 @@
             <div class="container">
                  <div class="banner">
                     <div class="banner-left">
+                       <div class="banner-info">
                         <h5 class="banner1">Best dental surgeons</h5>
-                        <h1 class="banner2">25K+ STUDENTS<br>TRUST US</h1>
-                        <h4 class="banner3">Our goal is to make online education work<br>for every one</h4>
-                        <div class="btn">
-                        <button class="quote">Get quote now</button>
-                        <button class="learn">learn more</button>
+                        <h1 class="banner2">25K+ STUDENTS TRUST US</h1>
+                        <h4 class="banner3">Our goal is to make online education work for every one</h4>
+                        <div class="banner-button">
+                        <button class="btn-a">Get Quote Now</button>
+                        <button class="btn-b">Learn More</button>
                         </div>
+                      </div> 
                     </div>
     
                     <div class="banner-right">
@@ -80,13 +81,13 @@
         </section>
 
        
-        <section class="about">
+        <section id="Product" class="about">
             <div class="container">
                 <div class="about-page">
                 <div class="upper-layout">
                     <h6 class="a1">Pracitice Advice</h6>
-                    <h1 class="">Get Quality Education</h1>
-                    <p class="a3">Problems tryia2ng to resolve the conflict between<br>the two major realms of classical physics,newtonian mechanics </p>
+                    <h1 class="a2">Get Quality Education</h1>
+                    <p class="a3">Problems tryia2ng to resolve the conflict between<br>the two major realms of classical physics: newtonian mechanics </p>
                 </div>
                 <div class="down-layout">
                     <div class="layout-1">
@@ -95,7 +96,7 @@
                        <div class="underline">
 
                        </div>
-                       <p class="b2">The gradualaccumulation of<br>information about </p>
+                       <p class="b2">The gradualaccumulation of information about </p>
                     </div>
                     <div class="layout-1">
                        <span class="iocn"><i class="fa-solid fa-book"></i></i></i></span>
@@ -129,7 +130,7 @@
                          <div class="under-line"></div>
                          <h2 class="serives1"> Video in Live Action</h2>
                          <p class="serives2">Problems trying to resolve the conflict between<br>the two major realms of Classical physics:<br>Newtonian mechanics </p>
-                         <h6 class="serives3">Learn More<span><i class="fa-solid fa-greater-than"></i></span></h6>
+                         <a href="#" class="serives3">Learn More<span><i class="greaterthan fa-solid fa-greater-than" ></i></span></a>
                     </div>
                     <div class="serives-right">
                            <img src="images/col-md-6.png">
@@ -139,7 +140,7 @@
 
         </section>
 
-        <section class="teacher">
+        <section id="Pricing" class="teacher">
             <div class="container">
                 <div class="about-teacher">
                     <div class="upper-section">
@@ -166,10 +167,12 @@
                                 </div>
                                 <img src="images/teach1-.png">
                             </div>
+                            <div class="rateing-info">
                             <div class="rateing">
                                 <h4 class="teach-a0">Expert instruction</h4>
                                 <div class="rateingdisplay">
-                                    <h4 class="ratenumber"><i class="rateingstar fa-solid fa-star"></i>4.9</h4>
+                                    <span><i class="rateingstar fa-solid fa-star"></i></span>
+                                    <h4 class="ratenumber">4.9</h4>
                                 </div>
                             </div>
                             <h5 class="teach-a1">Watch our Courses</h5>
@@ -180,6 +183,7 @@
                                 <h5 class="teach-a4-2">$6.48</h5>
                             </div>
                             <button class="teach-a5">Learn More<span><i class="fa-solid fa-greater-than"></i></span></button>
+                        </div>
                         </div>
                         <div class="teach-img1">
                             <div class="imgBox">
@@ -199,10 +203,12 @@
                                 </div>
                                 <img src="images/tech2-.png">
                             </div>
+                            <div class="rateing-info">
                             <div class="rateing">
                                 <h4 class="teach-a0">training Courses</h4>
                                 <div class="rateingdisplay">
-                                    <h4 class="ratenumber">  <i class="rateingstar fa-solid fa-star"> </i>4.9</h4>
+                                    <span><i class="rateingstar fa-solid fa-star"> </i></span>
+                                    <h4 class="ratenumber">4.9</h4>
                                 </div>
                             </div>
                             <h5 class="teach-a1">Our Experts Teacher</h5>
@@ -213,6 +219,7 @@
                                 <h5 class="teach-a4-2">$6.48</h5>
                             </div>
                             <button class="teach-a5">Learn More<span><i class="fa-solid fa-greater-than"></i></span></button>
+                            </div>
                         </div>
                         <div class="teach-img1">
                             <div class="imgBox">
@@ -232,20 +239,23 @@
                                 </div>
                                 <img src="images/tech3-.png">
                             </div>
+                            <div class="rateing-info">
                             <div class="rateing">
                                 <h4 class="teach-a0">Books Liberary	</h4>
                                 <div class="rateingdisplay">
-                                    <h4 class="ratenumber">  <i class="rateingstar fa-solid fa-star"> </i>4.9</h4>
+                                    <span> <i class="rateingstar fa-solid fa-star"> </i></span>
+                                    <h4 class="ratenumber">4.9</h4>
                                 </div>
                             </div>
                             <h5 class="teach-a1">Get Quality Education</h5>
                             <p class="teach-a2">We focus on ergonomics and meeting<br>you where you work. It's only a<br>keystroke away.</p>
-                            <h6 class="teach-a3"><span><i class="fa-solid fa-download"></i></span>15 Sales</h6>
+                            <h6 class="teach-a3"><a><i class="fa-solid fa-download"></i></a>15 Sales</h6>
                             <div class="rate">
                                 <h5 class="teach-a4-1">$16.48</h5>
                                 <h5 class="teach-a4-2">$6.48</h5>
                             </div>
                             <button class="teach-a5">Learn More<span><i class="fa-solid fa-greater-than"></i></span></button>
+                        </div>
                         </div>
                        
                     
@@ -288,7 +298,7 @@
                             </div>
                             <div class="rewiver">
                             <h6 class="rewiver1">Regina Miles</h6>
-                            <p class="rewive-1a">Designer</p>
+                            <h6 class="rewive-1a">Designer</h6>
                            </div>
                            </div>
                         </div>
@@ -314,7 +324,7 @@
                                 </div>
                                 <div class="rewiver">
                                 <h6 class="rewiver1">Regina Miles</h6>
-                                <p class="rewive-1a">Designer</p>
+                                <h6 class="rewive-1a">Designer</h6>
                                </div>
                                </div>
                         </div>
@@ -340,7 +350,7 @@
                             </div>
                             <div class="rewiver">
                             <h6 class="rewiver1">Regina Miles</h6>
-                            <p class="rewive-1a">Designer</p>
+                            <h6 class="rewive-1a">Designer</h6>
                            </div>
                            </div> 
                         </div>
@@ -363,7 +373,7 @@
             </div>
         </section>
 
-        <section class="subscribe">
+        <section id=contact class="subscribe">
             <div class="container">
                 <div class="about-sub">
                     <h6 class="sub1">Newsletter</h6>
@@ -383,44 +393,47 @@
                     <div class="footer1">
                         <h5 class="footerhead">Company Info</h5>
                         <ul class="footer-cont">
-                            <li class="foot">About Us</li>
-                            <li class="foot">Carrier</li>
-                            <li class="foot">We are hiring</li>
-                            <li class="foot">Blog</li>
+                            <li class="foot"><a href="#"> About Us</a></li>
+                            <li class="foot"><a href="#">Carrier</a></li>
+                            <li class="foot"><a href="#">We are hiring</a></li>
+                            <li class="foot"><a href="#">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer1">
                         <h5 class="footerhead">Legal</h5>
                         <ul class="footer-cont">
-                            <li class="foot">About Us</li>
-                            <li class="foot">Carrier</li>
-                            <li class="foot">We are hiring</li>
-                            <li class="foot">Blog</li>
+                            <li class="foot"><a href="#"> About Us</a></li>
+                            <li class="foot"><a href="#">Carrier</a></li>
+                            <li class="foot"><a href="#">We are hiring</a></li>
+                            <li class="foot"><a href="#">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer1">
                         <h5 class="footerhead">Features</h5>
                         <ul class="footer-cont">
-                            <li class="foot">Business Marketing</li>
-                            <li class="foot">User Analytic</li>
-                            <li class="foot">Live Chat</li>
-                            <li class="foot">Unlimited Support</li>
+                            <li class="foot"><a href="#">Business Marketing</a></li>
+                            <li class="foot"><a href="#">User Analytic</a></li>
+                            <li class="foot"><a href="#">Live Chat</a></li>
+                            <li class="foot"><a href="#">Unlimited Support</a></li>
                         </ul>
                     </div>
                     <div class="footer1">
                         <h5 class="footerhead">Resources</h5>
                         <ul class="footer-cont">
-                            <li class="foot">IOS & Android</li>
-                            <li class="foot">Watch a Demo</li>
-                            <li class="foot">Customers</li>
-                            <li class="foot">API</li>
+                            <li class="foot"><a href="#">IOS & Android</a></li>
+                            <li class="foot"><a href="#">Watch a Demo</a></li>
+                            <li class="foot"><a href="#">Customers</a></li>
+                            <li class="foot"><a href="#">API</a></li>
                         </ul>
                     </div>
                     <div class="footer2">
                         <h5 class="footerhead">Get In Touch</h5>
                         <ul class="footer-cont-1">
                             <li class="foot"><span><i class="footer-icon1 fa-solid fa-phone"></i></span>(480) 555-0103</li>
-                            <li class="foot-1"><span><i class="footer-icon1 fa-solid fa-location-dot"></i></span>4517 Washington Ave. Manchester,<br>Kentucky 39495</li>
+                            <div class="footer2-icon1">
+                                <span><i class="footer-icon2 fa-solid fa-location-dot"></i></span>  
+                                <li class="foot-1">4517 Washington Ave. Manchester,<br>Kentucky 39495</li>
+                            </div>    
                             <li class="foot"><span><i class="footer-icon1 fa-regular fa-envelope"></i></span class="email">debra.holt@example.com</li>
                             
                         </ul>
