@@ -1197,6 +1197,22 @@ justify-content: space-between;
         font-weight: 600;
     }  
 }
+@media (max-width:610px) {
+    .banner-left .banner2 {
+        padding-left: 130px;
+        padding-right: 60px;
+    }
+    .btn-a {
+        padding: 8px 20px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .btn-b {
+        padding: 8px 20px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
 @media (max-width:600px) {
     .status .status1-1 {
         font-size: 45px;
@@ -1407,6 +1423,19 @@ justify-content: space-between;
     } 
     .endsection .footer-endicon {
         font-size: 18px;
+    }
+}
+@media (max-width:350px) {
+    .status-bar {
+        padding: 30px 0 20px 0;
+    }
+    .status .status1-1 {
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .status .status1-2 {
+        font-size: 9px;
+        font-weight: 500;
     }
 }
 @media (max-width:325px){
