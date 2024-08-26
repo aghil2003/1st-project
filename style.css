@@ -900,7 +900,7 @@ footer{
 }
 .upper-footer{
     display: flex;
-    gap: 55px;
+    gap: 47px;
     padding-bottom: 60px;
     
 }
@@ -955,10 +955,7 @@ footer{
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     color: #737373;
-    /* margin-top: 20px;
-    margin-bottom: 25px; */
     display: flex;
-    word-break: break-all;
 }
 .upper-footer  .footer-cont-1 .foot .footer-icon1{
     color: #96BB7C;
