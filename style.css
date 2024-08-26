@@ -1437,6 +1437,17 @@ justify-content: space-between;
         font-size: 9px;
         font-weight: 500;
     }
+    .status-bar {
+        padding: 30px 0 20px 0;
+    }
+    .status .status1-1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .status .status1-2 {
+        font-size: 9px;
+        font-weight: 500;
+    }
 }
 @media (max-width:325px){
     .btn-a {
@@ -1452,17 +1463,7 @@ justify-content: space-between;
     .banner-button{
         padding-left: 40px;
     }
-    .status-bar {
-        padding: 30px 0 20px 0;
-    }
-    .status .status1-1 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-    .status .status1-2 {
-        font-size: 9px;
-        font-weight: 500;
-    }
+  
     .about-page {
         padding: 0px 0 50px 0;
     }
