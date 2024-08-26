@@ -305,7 +305,7 @@ header{
 .down-layout .layout-1{
     width:328px;
     margin:auto;
-    padding: 35px 40px 35px 40px;
+    padding: 35px 35px 35px 40px;
     gap: 20px;
     background-color: #FFFFFF;
     align-items: start;
@@ -489,7 +489,7 @@ header{
     padding-top: 20px;
 }
 .rateing-info{
-    padding:0  15px  50px 15px;
+    padding:0  0  50px 15px;
 }
 .teach-img1 .rateing .teach-a0{
       font-size: 14px;
@@ -540,6 +540,8 @@ header{
       color: #737373;
       padding-top: 10px;
       padding-bottom: 10px;
+      width: 100%;
+      padding-right: 30px;
 
 }
 .teach-img1 .teach-a3{
@@ -757,7 +759,8 @@ header{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0 0 30px 70px ;
+    justify-content: center;
+    padding-bottom: 30px;
     
 }
 .rewive-1 .rewivers .rewiver .rewiver1{
@@ -897,7 +900,7 @@ footer{
 }
 .upper-footer{
     display: flex;
-    gap: 45px;
+    gap: 55px;
     padding-bottom: 60px;
     
 }
@@ -1045,6 +1048,55 @@ justify-content: space-between;
     flex-wrap: wrap;
    }
 }
+@media (max-width:946px){
+    .rateing-info{
+        padding:0  0  50px 10px;
+    }
+}
+@media (max-width:932px){
+    .rateing-info{
+        padding:0  0  50px 10px;
+    }
+    .teach-img1 .teach-a2 {
+        padding-right: 15px;
+    }
+    .down-layout .layout-1 {
+        padding: 35px 30px 35px 40px;
+    }
+}
+@media (max-width:919px){
+    .down-layout .layout-1 {
+        padding: 35px 25px 35px 40px;
+    }
+}
+@media (max-width:900px){
+    .down-layout .layout-1 {
+        padding: 35px 20px 35px 40px;
+    }
+}
+@media (max-width:888px){
+    .down-layout .layout-1 {
+        padding: 35px 15px 35px 40px;
+    }
+}
+@media (max-width:885px) {
+    .teach-img1 .teach-a2 {
+        padding-right: 10px;
+    }
+}
+@media (max-width:872px) {
+    .lower-section{
+        justify-content: center;
+        flex-wrap: wrap;
+       }
+       .teach-img1 .teach-a2 {
+        padding-right: 30px;
+    }
+    .down-layout{
+        justify-content: center;
+        flex-wrap: wrap;
+       }
+}     
 @media (max-width:840px){
    .navitems{
     flex-direction: column;
@@ -1075,14 +1127,6 @@ justify-content: space-between;
    }
    .banner-right img{
     display: none;
-   }
-   .down-layout{
-    justify-content: center;
-    flex-wrap: wrap;
-   }
-   .lower-section{
-    justify-content: center;
-    flex-wrap: wrap;
    }
    .status-bar{
     padding: 50px 30px 60px 30px;
